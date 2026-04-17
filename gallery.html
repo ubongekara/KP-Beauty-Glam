@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Gallery</title>
+   <link href="./src/output.css" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Raleway:wght@300;400&display=swap" rel="stylesheet">
+
+</head>
+</head>
+<body class="relative bg-linear-to-r from-blush via-porcelain to-blush">
+   <div class="absolute inset-0 bg-deep opacity-20 -z-10"></div>
+   <header class="py-6 px-5 fixed top-0 left-0 w-full z-50">
+       <div class="absolute inset-0 bg-white opacity-30 -z-30"></div>
+      <nav class="flex flex-row justify-between gap-20">
+         <h1 class="text-xl md:text-2xl font-bold font-heading ">KP <span class="italic text-deep">Beauty</span> Glam</h1>
+
+         <ul class="md:flex flex-row justify-between items-center gap-5 font-body hidden">
+            <li><a href="index.html" class="text-[19px] font-medium hover:text-white text-black hover:underline underline-offset-3 transition-all duration-300">Home</a></li>
+            <li><a href="service.html" class="text-[19px] font-medium hover:text-white text-black hover:underline underline-offset-3 transition-all duration-300">Services</a></li>
+            <li><a href="about.html" class="text-[19px] font-medium hover:text-white text-black hover:underline underline-offset-3 transition-all duration-300">About</a></li>
+            <li><a href="gallery.html" class="text-[19px] font-medium hover:text-white text-black hover:underline underline-offset-3 transition-all duration-300">Gallery</a></li>
+            <li><a href="contact.html" class="text-[19px] font-medium hover:text-white text-black hover:underline underline-offset-3 transition-all duration-300">Contact</a></li>
+
+         </ul>
+
+         <button onclick="hamBurger()" class="md:hidden flex flex-col justify-center items-center gap-1 active:scale-110">
+            <div class="bg-[#2c1a1a] h-0.5 w-5"></div>
+            <div class="bg-porcelain h-0.5 w-4"></div>
+            <div class="bg-[#2c1a1a] h-0.5 w-5"></div>
+         </button>
+      </nav>
+   </header>
+
+   
+   <div class="bg-white fixed w-full h-[60vh] py-22 px-6 rounded-b-md shadow-md hidden z-40 shadow-deep" id="hiddenmenu">
+      <ul class="md:flex flex-col justify-between items-center gap-9 font-body ">
+            <li class="mb-2"><a href="index.html" class="text-lg font-medium hover:text-berry text-deep hover:underline underline-offset-3 transition-all duration-300">Home</a></li>
+            <li class="mb-2"><a href="service.html" class="text-lg font-medium hover:text-berry text-deep hover:underline underline-offset-3 transition-all duration-300">Services</a></li>
+            <li class="mb-2"><a href="about.html" class="text-lg font-medium hover:text-berry text-deep hover:underline underline-offset-3 transition-all duration-300">About</a></li>
+            <li class="mb-2"><a href="gallery.html" class="text-lg font-medium hover:text-berry text-deep hover:underline underline-offset-3 transition-all duration-300">Gallery</a></li>
+            <li class="mb-2"><a href="contact.html" class="text-lg font-medium hover:text-berry text-deep hover:underline underline-offset-3 transition-all duration-300">Contact</a></li>
+
+         </ul>
+
+         <div class="flex flex-row justify-start mt-8 items-center gap-4">
+            <img src="Documents/fb-logo2.png" alt="facebook-logo" class="size-8 bg-deep rounded-2xl hover:scale-90 transition-all duration-300 active:bg-berry active:-translate-y-3">
+            <img src="Documents/tiktok-logo.png" alt="tiktok-logo" class="size-8 bg-deep rounded-2xl hover:scale-90 transition-all duration-300 active:bg-berry active:-translate-y-3">
+            <img src="Documents/ig-logo.jpg" alt="instagram-logo" class="size-8 bg-deep rounded-xl hover:scale-90 transition-all duration-300 active:bg-berry active:-translate-y-3">
+            <img src="Documents/x-logo.png" alt="X-logo" class="size-8  bg-deep rounded-2xl hover:scale-90 transition-all duration-300 active:bg-berry active:-translate-y-3">
+         </div>
+      </div>
+   </div>
+
+   <section class="reveal opacity-0 translate-y-7 transition-all duration-600 delay-100 ease-in px-5 mb-7 pt-31 md:px-7 md:pt-34-">
+   <h1 class="text-3xl md:text-4xl font-heading mb-6 font-medium uppercase sm:text-center">The Work Speaks</h1>
+   <p class="font-body md:text-xl sm:text-center">Every image in our gallery is a real client, a real moment, and real artistry. Browse our portfolio and find your inspiration.</p>
+   </section>
+
+   <section class="px-5 py-3 md:px-7">
+      <div class="grid-cols-2 grid justify-between items-center gap-6">
+         <img src="Documents/aseobe-img.jpg"  class="rounded-t-sm object-cover w-full h-70 md:h-90 reveal opacity-0 translate-y-7 delay-100 duration-500 ease-in-out">
+         <img src="Documents/birthday-img.jpg" alt="" class="rounded-t-sm object-cover w-full h-70 md:h-90 reveal opacity-0 translate-y-7 delay-100 duration-500 ease-in-out">
+         <img src="Documents/body-img.jpg" alt="" class="rounded-t-sm object-cover w-full h-70 md:h-90 col-span-2 reveal opacity-0 -translate-x-8 delay-100 duration-500 ease-in-out">
+         <img src="Documents/bridal-makeup.jpg" alt="" class="rounded-t-sm object-cover w-full h-70 md:h-90 reveal opacity-0 translate-y-7 delay-100 duration-500 ease-in-out">
+         <img src="Documents/commercial-img.jpg" alt="" class="rounded-t-sm object-cover w-full h-full row-span-2 reveal opacity-0 translate-x-8 delay-100 duration-500 ease-in-out">
+         <img src="Documents/event-makeup.jpg" alt="" class="rounded-t-sm object-cover w-full h-70 md:h-90 reveal opacity-0 translate-y-7 delay-100 duration-500 ease-in-out">
+         <img src="Documents/events-img.jpg" alt="" class="rounded-t-sm object-cover w-full h-70 md:h-90 reveal opacity-0 translate-y-7 delay-100 duration-500 ease-in-out">
+         <img src="Documents/photo-img.jpg" alt="" class="rounded-t-sm object-cover w-full h-70 md:h-90 reveal opacity-0 translate-y-7 delay-100 duration-500 ease-in-out">
+         <img src="Documents/photoshoot.jpg" alt="" class="rounded-t-sm object-cover w-full h-70 col-span-2 reveal opacity-0 scale-90 delay-100 duration-500 ease-in-out">
+         <img src="Documents/trad-img.jpg" alt="" class="rounded-t-sm object-cover w-full h-70 md:h-90 reveal opacity-0 translate-y-7 delay-100 duration-500 ease-in-out">
+         <img src="Documents/wedd-img.jpg" alt="" class="rounded-t-sm object-cover w-full h-70 md:h-90 reveal opacity-0 translate-y-7 delay-100 duration-500 ease-in-out">
+         <img src="Documents/events-glam.jpg" alt="" class="rounded-t-sm object-cover w-full h-70 md:h-90 col-span-2 reveal opacity-0 scale-90 delay-100 duration-500 ease-in-out">
+
+      </div>
+   </section>
+
+   <!--footer-->
+
+     
+    <footer class= " text-porcelain pt-7 px-7 pb-2 md:pt-9 md:px-10 bg-deep mt-5">
+      <div class="grid grid-cols-1 justify-center gap-6 items-center">
+      <div>
+         <h1 class="text-3xl font-heading mb-5">KP <span class="italic">Beauty</span> Glam</h1>
+         <p>Professional makeup artistry for every version of you. Based in Port Harcourt, serving all occasions with luxury and precision.</p>
+         <div class="flex flex-row justify-start mt-5 mb-5 items-center gap-4">
+            <img src="Documents/fb-logo2.png" alt="facebook-logo" class="size-8">
+            <img src="Documents/tiktok-logo.png" alt="tiktok-logo" class="size-8">
+            <img src="Documents/ig-logo.jpg" alt="instagram-logo" class="size-8">
+            <img src="Documents/x-logo.png" alt="X-logo" class="size-8 ">
+         </div>
+      </div>
+
+         <hr class="mt-2">
+      <p class="text-md text-center">Copyright @Teksavy - Done by Rikky</p>
+   </footer>
+      <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>KP Beauty Glam</title>
+   <link href="./src/output.css" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Raleway:wght@300;400&display=swap" rel="stylesheet">
+
+</head>
+<body class="bg-[url('/Documents/body-img.jpg')] m-0 p-0 bg-fixed bg-cover relative">
+   <div class="absolute inset-0 bg-black opacity-30 -z-10"></div>
+
+   <header class="py-6 px-5 fixed top-0 left-0 w-full z-50">
+       <div class="absolute inset-0 bg-white opacity-30 -z-30"></div>
+      <nav class="flex flex-row justify-between gap-20">
+         <h1 class="text-xl md:text-2xl font-bold font-heading ">KP <span class="italic text-deep">Beauty</span> Glam</h1>
+
+         <ul class="md:flex flex-row justify-between items-center gap-5 font-body hidden">
+            <li><a href="index.html" class="text-[19px] font-medium hover:text-black text-white hover:underline underline-offset-3">Home</a></li>
+            <li><a href="service.html" class="text-[19px] font-medium hover:text-black text-white hover:underline underline-offset-3">Services</a></li>
+            <li><a href="about.html" class="text-[19px] font-medium hover:text-black text-white hover:underline underline-offset-3">About</a></li>
+            <li><a href="gallery.html" class="text-[19px] font-medium hover:text-black text-white hover:underline underline-offset-3">Gallery</a></li>
+            <li><a href="contact.html" class="text-[19px] font-medium hover:text-black text-white hover:underline underline-offset-3">Contact</a></li>
+
+         </ul>
+
+         <button onclick="hamBurger()" class="md:hidden flex flex-col justify-center items-center gap-1 active:scale-110">
+            <div class="bg-[#2c1a1a] h-0.5 w-5"></div>
+            <div class="bg-deep h-0.5 w-4.5"></div>
+            <div class="bg-[#2c1a1a] h-0.5 w-5"></div>
+         </button>
+      </nav>
+   </header>
+
+   <div class="bg-white fixed w-full h-[60vh] py-22 px-6 rounded-b-md shadow-md hidden z-40 shadow-deep" id="hiddenmenu">
+      <ul class="md:flex flex-col justify-between items-center gap-9 font-body ">
+            <li class="mb-2"><a href="index.html" class="text-lg font-medium hover:text-berry text-deep hover:underline underline-offset-3 transition-all duration-300">Home</a></li>
+            <li class="mb-2"><a href="service.html" class="text-lg font-medium hover:text-berry text-deep hover:underline underline-offset-3 transition-all duration-300">Services</a></li>
+            <li class="mb-2"><a href="about.html" class="text-lg font-medium hover:text-berry text-deep hover:underline underline-offset-3 transition-all duration-300">About</a></li>
+            <li class="mb-2"><a href="gallery.html" class="text-lg font-medium hover:text-berry text-deep hover:underline underline-offset-3 transition-all duration-300">Gallery</a></li>
+            <li class="mb-2"><a href="contact.html" class="text-lg font-medium hover:text-berry text-deep hover:underline underline-offset-3 transition-all duration-300">Contact</a></li>
+
+         </ul>
+
+         <div class="flex flex-row justify-start mt-8 items-center gap-4">
+            <img src="Documents/fb-logo2.png" alt="facebook-logo" class="size-8 bg-deep rounded-2xl hover:scale-90 transition-all duration-300 active:bg-berry active:-translate-y-3">
+            <img src="Documents/tiktok-logo.png" alt="tiktok-logo" class="size-8 bg-deep rounded-2xl hover:scale-90 transition-all duration-300 active:bg-berry active:-translate-y-3">
+            <img src="Documents/ig-logo.jpg" alt="instagram-logo" class="size-8 bg-deep rounded-xl hover:scale-90 transition-all duration-300 active:bg-berry active:-translate-y-3">
+            <img src="Documents/x-logo.png" alt="X-logo" class="size-8  bg-deep rounded-2xl hover:scale-90 transition-all duration-300 active:bg-berry active:-translate-y-3">
+         </div>
+      </div>
+   </div>
+
+   <!--Hero-section-->
+
+   <section class="reveal h-screen py-40 px-7 md:text-center opacity-0 translate-y-7 transition-all duration-600 delay-100 ease-in ">
+      <h1 class="text-4xl font-heading text-white font-bold mb-15 md:text-5xl">Glamour Is Not an Accident.</h1>
+      <p class="text-xl font-body font-medium text-white leading-6 mx-auto md:w-[45%] md:text-center mt-10 md:text-2xl">Professional makeup artistry for every version of you — bridal, editorial, events, and everyday luxury</p>
+      <div class="flex flex-row gap-5 mt-30 md:justify-center">
+      <button class="w-36 h-12 md:w-45 md:h-14 border border-porcelain hover:text-white active:scale-90 active:border-blush text-center text-md md:text-xl rounded-md bg-berry text-deep"><a href="contact.html">Book Your Look</a></button>
+      <button class="w-35 h-12 md:w-44 md:h-14 border border-blush hover:text-blush active:scale-90 active:border-blush text-center text-md rounded-md md:text-xl bg-deep text-porcelain"><a href="gallery.html">View Gallery</a></button>
+         </div>
+   </section>
+   </section>
+
+   <!--Intro-section-->
+
+   <section class="reveal md:h-[65vh] md:py-10 opacity-0 translate-y-7 transition-all duration-600 delay-100 ease-in bg-blush md:px-10 py-7 px-7 md:flex flex-row justify-between items-center gap-9">
+      <div class="md:float-left mb-6 md:w-[45%]">
+      <h1 class="font-body text-md font-bold mb-4">
+         Welcome to KP Beauty Glam
+      </h1>
+      <p >Every Face Tells a Story</p>
+      <p class="font-body">At KP Beauty Glam, we believe every face tells a story. Our job is to make yours unforgettable. Founded on a passion for artistry and a deep love for beauty in all its forms, we bring precision, creativity, and luxury to every appointment.
+      </p>  
+      <p class="font-body mt-2">Whether you're walking down the aisle, stepping onto a set, or simply treating yourself — you deserve to feel extraordinary.</span></p>
+      <button class="w-34 mt-4 mb-2 h-10 md:w-42 md:h-12 border border-blush hover:text-blush active:scale-90 active:border-blush text-center text-md rounded-md md:text-lg bg-deep text-porcelain"
+      ><a href="about.html">Learn More</a></button>
+         </div>
+         <img src="Documents/intro-img.jpg" class="rounded-sm object-cover md:float-right md:w-[45%] md:h-full h-90  w-full ">
+   
+   </section>
+
+   <!--Services-->
+
+   
+   <section class="reveal py-7 pt-15 px-7 md:py-9 md:px-10 opacity-0 translate-y-7 transition-all duration-600 delay-100 ease-in bg-porcelain">
+      <h1 class="text-deep font-medium text-lg mb-4">What We Do Best</h1>
+      <p class="font-heading text-2xl font-bold mb-6 text-black">Services Crafted for You</p>
+      <div class="grid grid-cols-1 justify-between gap-10 md:grid-cols-3">
+         <div class="w-full">
+            <img src="Documents/bridal-makeup.jpg" alt="bridal-image" class="rounded-t-sm object-cover w-full h-70">
+            <div class="bg-berry px-3 py-4  rounded-b-sm">
+            <h1 class="font-medium text-2xl mb-2 font-heading">Bridal Makeup</h1>
+            <p class="font-medium">Your wedding day deserves perfection. We craft looks that last all day, 
+               photograph beautifully, and feel completely like you.</p>
+               <hr class="mt-4 mb-2 w-20 text-porcelain">
+               <p class="font-heading text-xl ">From $90</p>
+            </div>
+         </div>
+
+          <div class="w-full max-h-300">
+            <img src="Documents/event-makeup.jpg" alt="bridal-image" class="rounded-t-sm object-cover w-full h-70">
+            <div class="bg-berry px-3 py-4  rounded-b-sm">
+            <h1 class="font-medium text-2xl mb-2 font-heading">Photoshoots Makeup</h1>
+            <p class="font-medium">Your wedding day deserves perfection. We craft looks that last all day, 
+               photograph beautifully, and feel completely like you.</p>
+               <hr class="mt-4 mb-2 w-20 text-porcelain">
+               <p class="font-heading text-xl ">From $80</p>
+            </div>
+         </div>
+
+          <div class="w-full">
+            <img src="Documents/event.jpg" alt="bridal-image" class="rounded-t-sm object-cover w-full h-70">
+            <div class="bg-berry px-3 py-4  rounded-b-sm">
+            <h1 class="font-medium text-2xl mb-2 font-heading">Event Makeup</h1>
+            <p class="font-medium">From birthday dinners to red carpet nights, we bring the drama — or keep it elegantly understated. Your call.</p>
+               <hr class="mt-4 mb-2 w-20 text-porcelain">
+               <p class="font-heading text-xl ">From $70</p>
+            </div>
+         </div>
+         </div>
+   </section>
+
+
+   <!--Portfolio-->
+
+   <section class="reveal pb-20 md:pb-40 py-7 pt-15 px-7 md:py-9 md:px-10 relative opacity-0 translate-y-7 transition-all duration-600 delay-100 ease-in">
+      <div class="absolute inset-0 bg-black opacity-48 -z-30"></div>
+      <h1 class="text-white font-medium text-lg mb-4">Our Portfolio</h1>
+      <p class="font-heading text-2xl font-bold mb-6 text-porcelain">Services rendered to others</p>
+      <div class="grid grid-cols-2 md:grid-cols-3 justify-between gap-10">
+         <div class="reveal opacity-0 -translate-x-9 delay-100  relative row-span-2  hover:scale-98 transifion-transform duration-300 ease-in-out cursor-grab">
+            <a href="gallery.html" class="w-full"><img src="Documents/wedd-img.jpg" alt="bridal-makeup" class="rounded-2xl w-full object-cover h-full cursor-pointer"></a>
+            <div class="absolute transifion-all duration-300 ease-in-out opacity-0 hover:bg-black hover:opacity-50 inset-0"><span class="opacity-100 text-porcelain text-2xl pl-5">Bridal Makeup</span></div>
+          </div>
+
+           <div class="reveal opacity-0 translate-y-7 delay-100 h-80 md:row-span-1 relative hover:scale-98 transifion-transform duration-300 ease-in-out cursor-grab">
+            <a href="gallery.html"><img src="Documents/aseobe-img.jpg" alt="bridal-makeup" class="rounded-2xl w-full object-cover h-full cursor-pointer"></a>
+            <div class="absolute transifion-all duration-300 ease-in-out opacity-0 hover:bg-black hover:opacity-50 inset-0"><span class="opacity-100 text-porcelain text-2xl pl-5">Aseobe Makeup</span></div>
+          </div>
+
+           <div class="reveal opacity-0 translate-y-7 delay-100 h-80 hover:scale-98 transifion-transform duration-300 ease-in-out">
+            <a href="gallery.html" ><img src="Documents/birthday-img.jpg" alt="bridal-makeup" class="rounded-2xl w-full object-cover h-full cursor-pointer"></a>
+            <div class="absolute transifion-all duration-300 ease-in-out opacity-0 hover:bg-black hover:opacity-50 inset-0"><span class="opacity-100 text-porcelain text-2xl pl-5">Birthday Makeup</span></div>
+          </div>
+
+           <div class="reveal opacity-0 -translate-x-9 delay-100 h-80 col-span-2 md:row-span-2 relative hover:scale-98 transifion-transform duration-300 ease-in-out cursor-grab">
+            <a href="gallery.html" ><img src="Documents/events-img.jpg" alt="bridal-makeup" class="rounded-2xl w-full object-cover h-full cursor-pointer"></a>
+            <div class="absolute transifion-all duration-300 ease-in-out opacity-0 hover:bg-black hover:opacity-50 inset-0"><span class="opacity-100 text-porcelain text-2xl pl-5">Glam Makeup</span></div>
+          </div>
+
+           <div class="reveal opacity-0 -translate-x-9 delay-100 h-80 col-span-2 md:col-span-1 relative hover:scale-98 transifion-transform duration-300 ease-in-out cursor-grab">
+            <a href="gallery.html" ><img src="Documents/photoshoot.jpg" alt="bridal-makeup" class="rounded-2xl w-full object-cover h-full"></a>
+            <div class="absolute transifion-all duration-300 ease-in-out opacity-0 hover:bg-black hover:opacity-50 inset-0"><span class="opacity-100 text-porcelain text-2xl pl-5">Photoshoot Makeup</span></div>
+          </div>
+      </div>
+   </section>
+
+   <!--Booking-->
+
+   <section class="reveal opacity-0 translate-y-7 transition-all duration-600 delay-100 ease-in py-7 px-7 md:py-9 md:px-10 bg-blush text-center text-black">
+      <h1 class="text-3xl font-bold font-heading mb-4">Ready to Glow?</h1>
+      <p class="font-medium font-body mx-auto md:w-[45%] text-center">Spots fill up fast — especially for weekends and bridal season.
+Secure your date today and let's create something beautiful.</p>
+      <button class="mt-4 bg-deep rounded-sm text-porcelain w-49 h-13 hover:border-2 border-white active:scale-90 transition-all duration-300"><a href="contact.html">Book An Appointment</a></button>
+   </section>
+
+   <!--Footer-->
+
+   <footer class="reveal relative opacity-0 translate-y-7 transition-all duration-600 delay-100 ease-in text-porcelain pt-7 pb-1 px-7 md:pt-9 md:px-10">
+      <div class="absolute inset-0 bg-black opacity-50 -z-30"></div>
+      <div class="grid grid-cols-1 md:grid-cols-3 justify-center gap-6 items-center">
+      <div>
+         <h1 class="text-3xl font-heading">KP <span class="italic">Beauty</span> Glam</h1>
+         <p>Professional makeup artistry for every version of you. Based in Port Harcourt, serving all occasions with luxury and precision.</p>
+         <div class="flex flex-row justify-start mt-5 mb-5 items-center gap-4">
+            <img src="Documents/fb-logo2.png" alt="facebook-logo" class="size-8 hover:scale-90 transition-all duration-300 active:-translate-y-3">
+            <img src="Documents/tiktok-logo.png" alt="tiktok-logo" class="size-8 hover:scale-90 transition-all duration-300 active:-translate-y-3">
+            <img src="Documents/ig-logo.jpg" alt="instagram-logo" class="size-8 hover:scale-90 transition-all duration-300 active:-translate-y-3">
+            <img src="Documents/x-logo.png" alt="X-logo" class="size-8 hover:scale-90 transition-all duration-300 active:-translate-y-3">
+         </div>
+      </div>
+
+      <div>
+         <h1 class="text-2xl font-heading mb-3">Quick Link</h1>
+         <ul class="flex flex-col gap-1 font-body">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+
+         </ul>
+      </div>
+
+      <div class="text-2xl font-heading">
+         <h1 class="text-2xl font-heading mb-3">What We Do</h1>
+         <ul class="flex flex-col gap-1 font-body text-sm text-white">
+            <li>Wedding</li>
+            <li>Glam</li>
+            <li>Events</li>
+         </ul>
+      </div>
+      </div>
+
+      <hr class="mt-6 mb-4">
+
+      <p class="text-md text-center">Copyright @Teksavy - Done by Rikky</p>
+   </footer>
+
+   <script src="index.js"></script>
+</body>
+</html>

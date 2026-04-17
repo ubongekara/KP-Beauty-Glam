@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@theme {
+   --font-heading: 'DM Serif Display', serif;
+  --font-body: 'Raleway', sans-serif;
+
+  --color-porcelain: #FAF5F3;
+  --color-blush:     #EEC9BD;
+  --color-berry:     #C17A7A;
+  --color-deep:      #2E1515;
+}

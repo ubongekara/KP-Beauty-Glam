@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Services</title>
+ <link href="./src/output.css" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Raleway:wght@300;400&display=swap" rel="stylesheet">
+
+</head>
+<body class="relative bg-linear-to-r from-blush via-porcelain to-blush">
+   <div class="absolute inset-0 bg-deep opacity-20 -z-10"></div>
+   <header class="py-6 px-5 fixed top-0 left-0 w-full z-50">
+       <div class="absolute inset-0 bg-white opacity-30 -z-30"></div>
+      <nav class="flex flex-row justify-between gap-20">
+         <h1 class="text-xl md:text-2xl font-bold font-heading ">KP <span class="italic text-deep">Beauty</span> Glam</h1>
+
+         <ul class="md:flex flex-row justify-between items-center gap-5 font-body hidden">
+            <li><a href="index.html" class="text-[19px] font-medium hover:text-white text-black hover:underline underline-offset-3 transition-all duration-300">Home</a></li>
+            <li><a href="service.html" class="text-[19px] font-medium hover:text-white text-black hover:underline underline-offset-3 transition-all duration-300">Services</a></li>
+            <li><a href="about.html" class="text-[19px] font-medium hover:text-white text-black hover:underline underline-offset-3 transition-all duration-300">About</a></li>
+            <li><a href="gallery.html" class="text-[19px] font-medium hover:text-white text-black hover:underline underline-offset-3 transition-all duration-300">Gallery</a></li>
+            <li><a href="contact.html" class="text-[19px] font-medium hover:text-white text-black hover:underline underline-offset-3 transition-all duration-300">Contact</a></li>
+         </ul>
+
+         <button onclick="hamBurger()" class="md:hidden flex flex-col justify-center items-center gap-1 active:scale-110">
+            <div class="bg-[#2c1a1a] h-0.5 w-5"></div>
+            <div class="bg-porcelain h-0.5 w-4"></div>
+            <div class="bg-[#2c1a1a] h-0.5 w-5"></div>
+         </button>
+      </nav>
+   </header>
+
+   <div class="bg-white fixed w-full h-[60vh] py-22 px-6 rounded-b-md shadow-md hidden z-40 shadow-deep" id="hiddenmenu">
+      <ul class="md:flex flex-col justify-between items-center gap-9 font-body ">
+            <li class="mb-2"><a href="index.html" class="text-lg font-medium hover:text-berry text-deep hover:underline underline-offset-3 transition-all duration-300">Home</a></li>
+            <li class="mb-2"><a href="service.html" class="text-lg font-medium hover:text-berry text-deep hover:underline underline-offset-3 transition-all duration-300">Services</a></li>
+            <li class="mb-2"><a href="about.html" class="text-lg font-medium hover:text-berry text-deep hover:underline underline-offset-3 transition-all duration-300">About</a></li>
+            <li class="mb-2"><a href="gallery.html" class="text-lg font-medium hover:text-berry text-deep hover:underline underline-offset-3 transition-all duration-300">Gallery</a></li>
+            <li class="mb-2"><a href="contact." class="text-lg font-medium hover:text-berry text-deep hover:underline underline-offset-3 transition-all duration-300">Contact</a></li>
+
+         </ul>
+
+         <div class="flex flex-row justify-start mt-8 items-center gap-4">
+            <img src="Documents/fb-logo2.png" alt="facebook-logo" class="size-8 bg-deep rounded-2xl hover:scale-90 transition-all duration-300 active:bg-berry active:-translate-y-3">
+            <img src="Documents/tiktok-logo.png" alt="tiktok-logo" class="size-8 bg-deep rounded-2xl hover:scale-90 transition-all duration-300 active:bg-berry active:-translate-y-3">
+            <img src="Documents/ig-logo.jpg" alt="instagram-logo" class="size-8 bg-deep rounded-xl hover:scale-90 transition-all duration-300 active:bg-berry active:-translate-y-3">
+            <img src="Documents/x-logo.png" alt="X-logo" class="size-8  bg-deep rounded-2xl hover:scale-90 transition-all duration-300 active:bg-berry active:-translate-y-3">
+         </div>
+      </div>
+   </div>
+
+   <section class="reveal px-5 py-28 md:px-7 md:py-31 opacity-0 translate-y-7 transition-all duration-600 delay-100 ease-in">
+      <h1 class="text-3xl font-heading mb-6 font-medium uppercase sm:text-center">Our Services</h1>
+      <p class="font-body sm:text-center"> Every service is a full experience — not just a makeup application.
+Image: Wide shot of a beautifully set makeup studio — vanity mirrors with warm bulbs, organized brushes, elegant space.</p>
+
+         <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-between gap-12 items-center">
+            <div class="reveal opacity-0 -translate-x-9 delay-100 ease-in hover:scale-95 transition-all duration-300 shadow-md shadow-deep rounded-xl py-6 px-6 bg-linear-to-r from-blush via-porcelain to-blush">
+               <img src="Documents/birthday-img.jpg" class="size-40 object-cover shadow-md shadow-deep rounded-full mb-5">
+               <h2 class="text-2xl font-heading font-medium mb-3">Bridal Package</h2>
+               <p class="font-body">Your wedding makeup is one of the most important beauty decisions you'll make. We offer a full consultation, trial session, and on-the-day application. Includes touch-up kit, long-wear setting, and full-day durability guarantee. Available for bride, bridal party, and mothers.</p>
+               <p class="font-heading mt-3">Starts from: ₦85,000</p>
+            </div>
+
+            <div class="reveal opacity-0 -translate-x-9 delay-100 ease-in hover:scale-95 transition-transform duration-300 shadow-md shadow-deep rounded-xl py-6 px-6 bg-linear-to-r from-blush via-porcelain to-blush">
+                <img src="Documents/teaching-img.jpg" class="size-40 object-cover shadow-md shadow-deep rounded-full mb-5">
+               <h2 class="text-2xl font-heading font-medium mb-3">Makeup Lessons</h2>
+               <p class="font-body">Learn the techniques. We offer 1-on-1 sessions for beginners and intermediate-level clients who want to master their own everyday look. Walk away with a personalized routine.</p>
+               <p class="font-heading mt-3">Starts from: ₦40,000</p>
+            </div>
+
+            <div class="reveal opacity-0 -translate-x-9 delay-100 ease-in hover:scale-95 transition-transform duration-300 shadow-md shadow-deep rounded-xl py-6 px-6 bg-linear-to-r from-blush via-porcelain to-blush">
+                <img src="Documents/commercial-img.jpg" class="size-40 object-cover shadow-md shadow-deep rounded-full mb-5">
+               <h2 class="text-2xl font-heading font-medium mb-3">Editorial & Commercial</h2>
+               <p class="font-body">Built for the camera. We work alongside photographers, stylists, and creative directors to deliver high-concept looks for campaigns, music videos, magazine shoots, and more.</p>
+               <p class="font-heading mt-3">Starts from: ₦35,000</p>
+            </div>
+
+            <div class="reveal opacity-0 -translate-x-9 delay-100 ease-in hover:scale-95 transition-transform duration-300 shadow-md shadow-deep rounded-xl py-6 px-6 bg-linear-to-r from-blush via-porcelain to-blush">
+                <img src="Documents/photo-img.jpg" class="size-40 object-cover shadow-md shadow-deep rounded-full mb-5">
+               <h2 class="text-2xl font-heading font-medium mb-3">Photoshoot Glam</h2>
+               <p class="font-body">Your birthday makeup is one of the most important beauty decisions you'll make. We offer a full consultation, trial session, and on-the-day application. Includes touch-up kit, long-wear setting, and full-day durability guarantee. Available for bride, bridal party, and mothers.</p>
+               <p class="font-heading mt-3">Starts from: ₦85,000</p>
+            </div>
+
+            <div class="reveal opacity-0 -translate-x-9 delay-100 ease-in hover:scale-95 transition-transform duration-300 shadow-md shadow-deep rounded-xl py-6 px-6 bg-linear-to-r from-blush via-porcelain to-blush">
+                <img src="Documents/trad-img.jpg" class="size-40 object-cover shadow-md shadow-deep rounded-full mb-5">
+               <h2 class="text-2xl font-heading font-medium mb-3">Aseobe & Traditional Glam</h2>
+               <p class="font-body">Traditional ceremonies deserve a special kind of beauty. We blend cultural richness with modern artistry to create looks perfect for owambe parties, engagement ceremonies, and more.</p>
+               <p class="font-heading mt-3">Starts from: ₦60,000</p>
+            </div>
+
+            <div class="reveal opacity-0 -translate-x-9 delay-100 ease-in hover:scale-95 transition-transform duration-300 shadow-md shadow-deep rounded-xl py-6 px-6 bg-linear-to-r from-blush via-porcelain to-blush">
+                <img src="Documents/event-makeup.jpg" class="size-40 object-cover shadow-md shadow-deep rounded-full mb-5">
+               <h2 class="text-2xl font-heading font-medium mb-3">Event Glam</h2>
+               <p class="font-body">Whether it's a gala, birthday, graduation, or dinner date, we'll craft a look that turns heads. Choose from soft glam, full glam, or natural beat. Lashes included.</p>
+               <p class="font-heading mt-3">Starts from: ₦25,000</p>
+            </div>
+         </div>
+
+         <button class="bg-deep h-12 w-50 text-lg mt-30 flex flex-col justify-center mx-auto rounded-xl text-white active:scale-95 hover:border border-white">
+         <a href="contact.html">Book Now</a>
+      </button>
+
+   </section>
+
+      
+
+<footer class="reveal text-porcelain pt-7 px-7 pb-2 md:pt-9 md:px-10 bg-deep opacity-0 translate-y-7 transition-all duration-600 delay-100 ease-in ">
+      <div class="grid grid-cols-1 justify-center gap-6 items-center">
+      <div>
+         <h1 class="text-3xl font-heading mb-5">KP <span class="italic">Beauty</span> Glam</h1>
+         <p>Professional makeup artistry for every version of you. Based in Port Harcourt, serving all occasions with luxury and precision.</p>
+         <div class="flex flex-row justify-start mt-5 mb-5 items-center gap-4">
+            <img src="Documents/fb-logo2.png" alt="facebook-logo" class="size-8">
+            <img src="Documents/tiktok-logo.png" alt="tiktok-logo" class="size-8">
+            <img src="Documents/ig-logo.jpg" alt="instagram-logo" class="size-8">
+            <img src="Documents/x-logo.png" alt="X-logo" class="size-8 ">
+         </div>
+      </div>
+
+         <hr class="mt-2">
+      <p class="text-md text-center">Copyright @Teksavy - Done by Rikky</p>
+   </footer>
+</body>
+</html>
+
+   <script src="index.js"></script>
+</body>
+</html>
