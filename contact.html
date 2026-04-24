@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -147,17 +147,17 @@
          <div>
          <form>
             <div class="grid grid-cols-2 justify-between items-center md:gap-10 gap-6 mt-9"> 
-             <input type="text" id="name" placeholder="First Name" class="p-2 outline-none h-12 border-0 border-b border-deep focus:border-berry">
-           <input type="email" id="first-name" placeholder="Email@gmail.com" class="p-2 outline-none h-12 border-0 border-b border-deep focus:border-berry">
+             <input type="text" id="contactname" placeholder="Name" class="p-2 outline-none h-12 border-0 border-b border-deep focus:border-berry">
+           <input type="email" id="contactemail" placeholder="Email@gmail.com" class="p-2 outline-none h-12 border-0 border-b border-deep focus:border-berry">
            
            </div>
-          <textarea rows="6" placeholder="Message"
+          <textarea rows="6" placeholder="Message" id="contactmessage"
       class="w-full mt-9 text-deep outline-none border appearance-none border-berry focus:border-deep bg-transparent px-4 py-3 text-sm cursor-pointer resize-none"></textarea>
   </div>
          </form>
          </div>
 
-         <button class="bg-berry text-porcelain font-body text-sm tracking-wider font-medium  md:w-80 w-full uppercase py-4 mt-2 hover:bg-deep transition-colors duration-300">Submit</button>
+         <button onclick="submitMessage()" class="bg-berry text-porcelain font-body text-sm tracking-wider font-medium  md:w-80 w-full uppercase py-4 mt-2 hover:bg-deep transition-colors duration-300">Submit</button>
       </section>
 
       <!--footer-->
@@ -167,7 +167,7 @@
       <div class="grid grid-cols-1 justify-center gap-6 items-center">
       <div>
          <h1 class="text-3xl font-heading mb-5">KP <span class="italic">Beauty</span> Glam</h1>
-         <p>Professional makeup artistry for every version of you. Based in Port Harcourt, serving all occasions with luxury and precision.</p>
+         <p class="md:w-[40%]">Professional makeup artistry for every version of you. Based in Port Harcourt, serving all occasions with luxury and precision.</p>
          <div class="flex flex-row justify-start mt-5 mb-5 items-center gap-4">
             <img src="Documents/fb-logo2.png" alt="facebook-logo" class="size-8">
             <img src="Documents/tiktok-logo.png" alt="tiktok-logo" class="size-8">
